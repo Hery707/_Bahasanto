@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahasanto</title>
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #00ffcc;
+    }
+
+    input, button {
+      padding: 8px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    input {
+      width: 100%;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      border: 1px solid #333;
+    }
+
+    button {
+      background-color: #00cc99;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #05604cf5;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1e1e1e;
+    }
+
+    tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #1c1c1c;
+    }
+  </style>
+</head>
+<body>
+
+   <h1>Bahasanto</h1>
+
+  <!-- Pencarian -->
+  <input type="text" id="searchInput" placeholder="Cari kata atau arti..." onkeyup="cariKata()">
+
+  <!-- Form tambah kata -->
+  <div style="margin-top: 20px;">
+    <input type="text" id="kataIndo" placeholder="Bahasa Indonesia">
+    <input type="text" id="kataLokal" placeholder="Bahasa Kaledupa">
+    <button onclick="tambahKata()">“Mohon Maaf Jika ada kesalahan, mohon bantu koreksi.”</button>
+    <button onclick="tambahKata()">Tambah</button>
+  </div>
+
+  <!-- Tabel Kamus -->
+  <table>
+    <thead>
+      <tr>
+        <th>Bahasa Indonesia</th>
+        <th>Bahasa Kaledupa</th>
+      </tr>
+    </thead>
+    <tbody id="kamusBody">
+      <!-- Data awal bisa ditambahkan di sini -->
+       <tr>
+          <td>ANGKA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Asa</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Dua</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Tolu</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Ganna</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Lima</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>No'o</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Pitu</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Oalu</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Sia</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Ompulu</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Ompulu sa'asa</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Ompulu dodua</td>
+        </tr>
+         <tr>
+          <td>13</td>
+          <td>Ompulu totolu</td>
+        </tr>
+         <tr>
+          <td>14</td>
+          <td>Ompulu Ganna</td>
+        </tr>
+         <tr>
+          <td>15</td>
+          <td>Ompulu lolima</td>
+        </tr>
+         <tr>
+          <td>16</td>
+          <td>Ompulu nono'o</td>
+        </tr>
+         <tr>
+          <td>17</td>
+          <td>Ompulu popitu</td>
+        </tr>
+         <tr>
+          <td>18</td>
+          <td>Ompulu Oalu</td>
+        </tr>
+         <tr>
+          <td>19</td>
+          <td>Ompulu sosia</td>
+        </tr>
+         <tr>
+          <td>20</td>
+          <td>Dua hulu</td>
+        </tr>
+         <tr>
+          <td>30</td>
+          <td>Tolu hulu</td>
+        </tr>
+         <tr>
+          <td>40</td>
+          <td>hato hulu</td>
+        </tr>
+         <tr>
+          <td>50</td>
+          <td>Lima hulu</td>
+        </tr>
+         <tr>
+          <td>60</td>
+          <td>Nomo hulu</td>
+        </tr>
+         <tr>
+          <td>70</td>
+          <td>Hitu hulu</td>
+        </tr>
+        <tr>
+          <td>80</td>
+          <td>Alu hulu</td>
+        </tr>
+        <tr>
+          <td>90</td>
+          <td>Sia hulu</td>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td>Sahatu</td>
+        </tr>
+         <tr>
+          <td>1.000</td>
+          <td>Sarifu</td>
+        </tr>
+         <tr>
+          <td>10.000</td>
+          <td>Ompulu rifu</td>
+        </tr>
+         <tr>
+          <td>100.000</td>
+          <td>Sahatu rifu</td>
+        </tr>
+         <tr>
+          <td>1 juta</td>
+          <td>Sajuta</td>
+        </tr>
+         <tr>
+          <td>100 juta</td>
+          <td>Sahatu juta</td>
+        </tr>
+         <tr>
+          <td>1 Miliar</td>
+          <td>Sahatu Miliara</td>
+        </tr>
+         <tr>
+          <td>1 Triliun</td>
+          <td>Sahatu Triliun</td>
+        </tr>
+        <tr>
+          <td>HARI</td>
+          <td></td>
+        </tr>
+         <tr>
+          <td>Senin</td>
+          <td>Isinene</td>
+        </tr>
+         <tr>
+          <td>Selasa</td>
+          <td>Salasa</td>
+        </tr>
+        <tr>
+          <td>Rabu</td>
+          <td>Araba'a</td>
+        </tr>
+        <tr>
+          <td>Kamis</td>
+          <td>Hamisi</td>
+        </tr>
+        <tr>
+          <td>Jum'at</td>
+          <td>Juma'a</td>
+        </tr>
+        <tr>
+          <td>Sabtu</td>
+          <td>Sapotu</td>
+        </tr>
+        <tr>
+          <td>Minggu</td>
+          <td>Ahaji</td>
+        </tr>
+        <tr>
+          <td>Makan</td>
+          <td>Manga</td>
+        </tr>
+        <tr>
+          <td>Minum</td>
+          <td>Morou</td>
+        </tr>
+        <tr>
+          <td>Lapar</td>
+          <td>Moaro</td>
+        </tr>
+        <tr>
+          <td>Kenyang</td>
+          <td>Bila</td>
+        </tr>
+        <tr>
+          <td>Kemarin</td>
+          <td>Di nggafi</td>
+        </tr>
+        <tr>
+          <td>Hari ini</td>
+          <td>Moina ana</td>
+        </tr>
+        <tr>
+          <td>Besok</td>
+          <td>Ilange</td>
+        </tr>
+        <tr>
+          <td>Besok lusa</td>
+          <td>Heua</td>
+        </tr>
+        <tr>
+          <td>Pagi</td>
+          <td>Rea-Rea</td>
+        </tr>
+        <tr>
+          <td>Siang</td>
+          <td>Simponu olo</td>
+        </tr>
+        <tr>
+          <td>sore</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Malam</td>
+          <td>Uutu</td>
+        </tr>
+        <tr>
+          <td>Belum</td>
+          <td>Mbeado</td>
+        </tr>
+        <tr>
+          <td>Sebentar</td>
+          <td>Sabantara</td>
+        </tr>
+        <tr>
+          <td>Baru saja</td>
+          <td>Amompu</td>
+        </tr>
+        <tr>
+          <td>Tunggu</td>
+          <td>Hetaonne</td>
+        </tr>
+        <tr>
+          <td>Warna</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Merah</td>
+          <td>Meha</td>
+        </tr>
+        <tr>
+          <td>Kuning</td>
+          <td>Makuri</td>
+        </tr>
+        <tr>
+          <td>Hijau</td>
+          <td>Ijo</td>
+        </tr>
+        <tr>
+          <td>Biru</td>
+          <td>Kakanda</td>
+        </tr>
+        <tr>
+          <td>Hitam</td>
+          <td>Biru</td>
+        </tr>
+        <tr>
+          <td>Putih</td>
+          <td>Mohute</td>
+        </tr>
+        <tr>
+          <td>Terang</td>
+          <td>Melalla</td>
+        </tr>
+        <tr>
+          <td>KATA DEPAN</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>atas</td>
+          <td>Fafo</td>
+        </tr>
+        <tr>
+          <td>Bawah</td>
+          <td>Foru</td>
+        </tr>
+        <tr>
+          <td>Samping kanan</td>
+          <td>Safengka moana</td>
+        </tr>
+        <tr>
+          <td>Samping kiri</td>
+          <td>Safengka mohi</td>
+        </tr>
+        <tr>
+          <td>Depan</td>
+          <td>Aro</td>
+        </tr>
+        <tr>
+          <td>Belakang</td>
+          <td>Mburi</td>
+        </tr>
+        <tr>
+          <td>Dalam</td>
+          <td>Laro</td>
+        </tr>
+        <tr>
+          <td>Luar</td>
+          <td>Luara</td>
+        </tr>
+        <tr>
+          <td>Dekat</td>
+          <td>Medani</td>
+        </tr>
+        <tr>
+          <td>Jauh</td>
+          <td>Meellai</td>
+        </tr>
+        <tr>
+          <td>Tiba</td>
+          <td>Rato</td>
+        </tr>
+        <tr>
+          <td>Untuk</td>
+          <td>Ako</td>
+          <tr>
+          <td>Dari</td>
+          <td>Mina</td>
+        </tr>
+        <tr>
+          <td>Karena</td>
+          <td>Kaliu</td>
+        </tr>
+        <tr>
+          <td>Tapi</td>
+          <td>Intaha</td>
+        </tr>
+        <tr>
+          <td>Di samping itu</td>
+          <td>Di lepe atu</td>
+        </tr>
+        <tr>
+          <td>Kapan</td>
+          <td>Dihia</td>
+        </tr>
+        <tr>
+          <td>Dimana</td>
+          <td>Diumpa</td>
+        </tr>
+        <tr>
+          <td>Siapa</td>
+          <td>Ye'e</td>
+        </tr>
+        <tr>
+          <td>Padahal</td>
+          <td>Kambea</td>
+        </tr>
+        <tr>
+          <td>Dan juga</td>
+          <td>Kene duka</td>
+        </tr>
+        <tr>
+          <td>Jadi</td>
+          <td>Jari</td>
+        </tr>
+        <tr>
+          <td>Tadi</td>
+          <td>Baai</td>
+        </tr>
+        <tr>
+          <td>Di sini</td>
+          <td>Di ana</td>
+        </tr>
+        <tr>
+          <td>Di sana</td>
+          <td>Do afo</td>
+        </tr>
+        <tr>
+          <td>Kadang</td>
+          <td>Saga'a</td>
+        </tr>
+        <tr>
+          <td>Sering</td>
+          <td>Mengkundu</td>
+        </tr>
+        <tr>
+          <td>Pernah</td>
+          <td>Mina</td>
+        </tr><tr>
+          <td>Hampir</td>
+          <td>Sikire</td>
+        </tr>
+        <tr>
+          <td>Aku</td>
+          <td>Iyaku</td>
+        </tr>
+        <tr>
+          <td>Kamu</td>
+          <td>Iko'o</td>
+        </tr>
+        <tr>
+          <td>Bapak</td>
+          <td>Aama</td>
+        </tr>
+        <tr>
+          <td>Bapakku</td>
+          <td>Amasu</td>
+        </tr>
+        <tr>
+          <td>Bapakmu</td>
+          <td>Ama'u</td>
+        </tr>
+        <tr>
+          <td>Ibu</td>
+          <td>Iina</td>
+        </tr>
+        <tr>
+          <td>Ibuku</td>
+          <td>Inasu</td>
+        </tr>
+        <tr>
+          <td>Ibumu</td>
+          <td>Ina'u</td>
+        </tr>
+        <tr>
+          <td>Adik</td>
+          <td>Yai</td>
+        </tr>
+        <tr>
+          <td>Adiku</td>
+          <td>Yaisu</td>
+        </tr>
+        <tr>
+          <td>Adikmu</td>
+          <td>Yai'u</td>
+        </tr>
+        <tr>
+          <td>Kakak</td>
+          <td>Kaka</td>
+        </tr>
+        <tr>
+          <td>Kakaku</td>
+          <td>Kakasu</td>
+        </tr>
+        <tr>
+          <td>Kakamu</td>
+          <td>Kaka'u</td>
+        </tr>
+        </tr><tr>
+          <td>Kita</td>
+          <td>Ikita</td>
+        </tr>
+        <tr>
+          <td>Sendiri</td>
+          <td>Peesa</td>
+        </tr>
+        <tr>
+          <td>Teman</td>
+          <td>Kene</td>
+        </tr>
+        <tr>
+          <td>Nama</td>
+          <td>nga</td>
+        </tr>
+        <tr>
+          <td>Orang</td>
+          <td>Mia</td>
+        </tr>
+        <tr>
+          <td>Teman-Teman</td>
+          <td>Pokene-kene</td>
+        </tr>
+        <tr>
+          <td>Nenek</td>
+          <td>Ompu fofine</td>
+        </tr>
+        <tr>
+          <td>Kakek</td>
+          <td>Ompu Moane</td>
+        </tr>
+        <tr>
+          <td>Sepupu</td>
+          <td>Tolida</td>
+        </tr>
+        <tr>
+          <td>Sombong</td>
+          <td>Papuji</td>
+        </tr>
+        <tr>
+          <td>Marah</td>
+          <td>Amara</td>
+        </tr>
+        <tr>
+          <td>Pelit</td>
+          <td>Maniti</td>
+        </tr>
+        <tr>
+          <td>Cantik</td>
+          <td>Mokossa</td>
+        </tr>
+        <tr>
+          <td>Ganteng</td>
+          <td>Makida</td>
+        </tr>
+        <tr>
+          <td>Jujur</td>
+          <td>Jujuru</td>
+        </tr>
+        <tr>
+          <td>Gila</td>
+          <td>Konduo</td>
+        </tr>
+        <tr>
+          <td>Tuli</td>
+          <td>Kabongo</td>
+        </tr>
+        <tr>
+          <td>Buta</td>
+          <td>Kandala</td>
+        </tr>
+        <tr>
+          <td>Pincang</td>
+          <td>Kejo</td>
+        </tr>
+        <tr>
+          <td>Botak</td>
+          <td>Bota</td>
+        </tr>
+        <tr>
+          <td>Lapar</td>
+          <td>Moaro</td>
+        </tr>
+        <tr>
+          <td>Haus</td>
+          <td>Motindou</td>
+        </tr>
+        <tr>
+          <td>Capek</td>
+          <td>Kiri</td>
+        </tr>
+        <tr>
+          <td>Lelah</td>
+          <td>Kiri</td>
+        </tr>
+        <tr>
+          <td>Ngantuk</td>
+          <td>Motuturu</td>
+        </tr>
+        <tr>
+          <td>Rajin</td>
+          <td>Menturu</td>
+        </tr>
+        <tr>
+          <td>Malas</td>
+          <td>Malasi</td>
+        </tr>
+        <tr>
+          <td>Bodoh</td>
+          <td>Pe'i</td>
+        </tr>
+        <tr>
+          <td>Pintar</td>
+          <td>Pintara</td>
+        </tr>
+        <tr>
+          <td>Kaya</td>
+          <td>Kaea</td>
+        </tr>
+        <tr>
+          <td>Miskin</td>
+          <td>Misikini</td>
+        </tr>
+        <tr>
+          <td>Berani</td>
+          <td>Barani</td>
+        </tr>
+        <tr>
+          <td>Takut</td>
+          <td>Maeka</td>
+        </tr>
+        <tr>
+          <td>Kecil</td>
+          <td>Bahili</td>
+        </tr>
+        <tr>
+          <td>Besar</td>
+          <td>To'oge</td>
+        </tr>
+        <tr>
+          <td>Tinggi</td>
+          <td>Mellanga</td>
+        </tr>
+        <tr>
+          <td>Pendek</td>
+          <td>Pudu</td>
+        </tr>
+        <tr>
+          <td>Senang</td>
+          <td>Melle</td>
+        </tr>
+        <tr>
+          <td>Kuat</td>
+          <td>Motukko</td>
+        </tr>
+         <tr>
+          <td>Lemah</td>
+          <td>Lembe</td>
+        </tr>
+         <tr>
+          <td>Berat</td>
+          <td>Moboha</td>
+        </tr>
+         <tr>
+          <td>Ringan</td>
+          <td>Mopaa</td>
+        </tr>
+         <tr>
+          <td>Mudah</td>
+          <td>Gampa</td>
+        </tr>
+         <tr>
+          <td>Sulit</td>
+          <td>Marasai</td>
+        </tr>
+         <tr>
+          <td>Murah</td>
+          <td>Mamuda</td>
+        </tr>
+         <tr>
+          <td>Mahal</td>
+          <td>Mohalli</td>
+        </tr>
+         <tr>
+          <td>Bagus</td>
+          <td>Leama</td>
+        </tr>
+         <tr>
+          <td>Tidak bagus</td>
+          <td>Toilaki</td>
+        </tr>
+        <tr>
+          <td>Dekat</td>
+          <td>Medani</td>
+        </tr>
+        <tr>
+          <td>Cepat</td>
+          <td>Merimba</td>
+        </tr>
+        <tr>
+          <td>Pelan</td>
+          <td>Pia-Pia</td>
+        </tr>
+        <tr>
+          <td>Tebal</td>
+          <td>Mokobo</td>
+        </tr>
+        <tr>
+          <td>Tipis</td>
+          <td>Monihi</td>
+        </tr>
+        <tr>
+          <td>Bersih</td>
+          <td>Barasi</td>
+        </tr>
+        <tr>
+          <td>Kotor</td>
+          <td>Kotoro</td>
+        </tr>
+        <tr>
+          <td>Banyak</td>
+          <td>Koruo</td>
+        </tr>
+        <tr>
+          <td>Benar</td>
+          <td>Bannara</td>
+        </tr>
+        <tr>
+          <td>Salah</td>
+          <td>sala</td>
+        </tr>
+        <tr>
+          <td>Luas</td>
+          <td>Luasi</td>
+        </tr>
+        <tr>
+          <td>Hidup</td>
+          <td>Membali</td>
+        </tr>
+        <tr>
+          <td>Mati</td>
+          <td>Mate</td>
+        </tr>
+        <tr>
+          <td>Sakit</td>
+          <td>Kiki'i</td>
+        </tr>
+        <tr>
+          <td>Sehat</td>
+          <td>Sehati</td>
+        </tr>
+        <tr>
+          <td>Beruntung</td>
+          <td>Dafua</td>
+        </tr>
+        <tr>
+          <td>Buka</td>
+          <td>Buku</td>
+        </tr>
+        <tr>
+          <td>Tutup</td>
+          <td>Banto</td>
+        </tr>
+        <tr>
+          <td>Ramai</td>
+          <td>Rame</td>
+        </tr>
+        <tr>
+          <td>Sepi</td>
+          <td>Linge</td>
+        </tr>
+        <tr>
+          <td>Manis</td>
+          <td>Mameko</td>
+        </tr>
+        <tr>
+          <td>Pahit</td>
+          <td>Mohakki</td>
+        </tr>
+        <tr>
+          <td>Panas</td>
+          <td>Mena</td>
+        </tr>
+        <tr>
+          <td>Dingin</td>
+          <td>Kengku</td>
+        </tr>
+        <tr>
+          <td>Mentah</td>
+          <td>Matta</td>
+        </tr>
+        <tr>
+          <td>Matang</td>
+          <td>Mota'a</td>
+        </tr>
+        <tr>
+          <td>Rambut</td>
+          <td>Hotu</td>
+        </tr>
+        <tr>
+          <td>Uban</td>
+          <td>Ofa</td>
+        </tr>
+        <tr>
+          <td>Kening</td>
+          <td>Foka</td>
+        </tr>
+        <tr>
+          <td>Alis</td>
+          <td>Kire</td>
+        </tr>
+        <tr>
+          <td>Bulu mata</td>
+          <td>Fulu mata</td>
+        </tr>
+        <tr>
+          <td>Hidung</td>
+          <td>Bobo</td>
+        </tr>
+        <tr>
+          <td>Kumis</td>
+          <td>Kumisi</td>
+        </tr>
+        <tr>
+          <td>Gigi</td>
+          <td>Koni</td>
+        </tr>
+        <tr>
+          <td>Lidah</td>
+          <td>Ella</td>
+        </tr>
+        <tr>
+          <td>Pipi</td>
+          <td>Baga</td>
+        </tr>
+        <tr>
+          <td>Wajah</td>
+          <td>Bangu</td>
+        </tr>
+        <tr>
+          <td>Telinga</td>
+          <td>Talinga</td>
+        </tr>
+                <tr>
+          <td>Janggut</td>
+          <td>Janggu</td>
+        </tr>
+                <tr>
+          <td>Leher</td>
+          <td>Kafu'u</td>
+        </tr>
+                <tr>
+          <td>Pundak</td>
+          <td>Bahu</td>
+        </tr>
+                <tr>
+          <td>Lengan</td>
+          <td>Hani</td>
+        </tr>
+                <tr>
+          <td>Ketiak</td>
+          <td>Happa</td>
+        </tr>
+                <tr>
+          <td>Punggung</td>
+          <td>Happa</td>
+        </tr>
+                <tr>
+          <td>Perut</td>
+          <td>Kompo</td>
+        </tr>
+                <tr>
+          <td>Pusar</td>
+          <td>Puo</td>
+        </tr>
+                <tr>
+          <td>Pantat</td>
+          <td>Tambi-Tambi</td>
+        </tr>
+                <tr>
+          <td>Paha</td>
+          <td>Fengke</td>
+        </tr>
+                <tr>
+          <td>Lutut</td>
+          <td>Tu'u</td>
+        </tr>
+                <tr>
+          <td>Ingus</td>
+          <td>Firi</td>
+        </tr>
+        
+    </tbody>
+  </table>
+
+  <!-- Script Fungsi -->
+  <script>
+    function tambahKata() {
+      const indo = document.getElementById('kataIndo').value.trim();
+      const lokal = document.getElementById('kataLokal').value.trim();
+
+      if (indo && lokal) {
+        const table = document.getElementById('kamusBody');
+        const row = table.insertRow();
+        const cellIndo = row.insertCell(0);
+        const cellLokal = row.insertCell(1);
+        cellIndo.textContent = indo;
+        cellLokal.textContent = lokal;
+
+        // Reset input
+        document.getElementById('kataIndo').value = '';
+        document.getElementById('kataLokal').value = '';
+      }
+    }
+
+    function cariKata() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const rows = document.getElementById('kamusBody').getElementsByTagName('tr');
+
+      for (let i = 0; i < rows.length; i++) {
+        const td1 = rows[i].getElementsByTagName('td')[0];
+        const td2 = rows[i].getElementsByTagName('td')[1];
+
+        if (td1 && td2) {
+          const text1 = td1.textContent.toLowerCase();
+          const text2 = td2.textContent.toLowerCase();
+          rows[i].style.display = (text1.includes(input) || text2.includes(input)) ? '' : 'none';
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+
+
