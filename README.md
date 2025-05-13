@@ -1272,6 +1272,24 @@
   </script>
 
 </body>
+
+<section id="saran" style="padding: 20px; color: white;">
+  <h2>Beri Masukan atau Saran</h2>
+  <form action="https://formspree.io/f/mwkgrzjb" method="POST">
+    <label for="wa">Nomor WhatsApp (opsional):</label><br>
+    <input type="text" name="wa" placeholder="Nomor WhatsApp kamu" style="width: 100%;"><br><br>
+
+    <label for="pesan">Pesan atau Saran:</label><br>
+    <textarea name="pesan" required placeholder="Tulis saran kamu di sini..." style="width: 100%; height: 100px;"></textarea><br><br>
+
+    <button type="submit">Kirim</button>
+  </form>
+
+  <h3>Atau hubungi kami langsung melalui WhatsApp:</h3>
+  <a href="https://wa.me/082131150091" target="_blank" style="color: #25d366; text-decoration: none;">Klik di sini untuk chat WhatsApp</a>
+</section>
+
+
 </html>
 
 
