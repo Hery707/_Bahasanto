@@ -1226,6 +1226,10 @@
           <td>Bertindak</td>
           <td>Mingku</td>
         </tr>
+         <tr>
+          <td>Mengolok-olok</td>
+          <td>Lae-laenga</td>
+        </tr>
         
     </tbody>
   </table>
