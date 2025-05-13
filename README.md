@@ -1272,18 +1272,6 @@
   </script>
 
 </body>
-<section id="saran" style="padding: 20px; color: white;">
-  <h2>Beri Masukan atau Saran</h2>
-  <form action="https://formspree.io/account" method="POST">
-    <label for="email">Email (opsional):</label><br>
-    <input type="email" name="email" placeholder="Email kamu" style="width: 100%;"><br><br>
-
-    <label for="pesan">Pesan atau Saran:</label><br>
-    <textarea name="pesan" required placeholder="Tulis saran kamu di sini..." style="width: 100%; height: 100px;"></textarea><br><br>
-
-    <button type="submit">Kirim</button>
-  </form>
-</section>
 </html>
 
 
