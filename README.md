@@ -555,7 +555,7 @@
         </tr>
         <tr>
           <td>Teman-Teman</td>
-          <td>Pokene-kene</td>
+          <td>kene-kene</td>
         </tr>
         <tr>
           <td>Nenek</td>
@@ -759,7 +759,7 @@
         </tr>
         <tr>
           <td>Benar</td>
-          <td>Bannara</td>
+          <td>Kobe</td>
         </tr>
         <tr>
           <td>Salah</td>
