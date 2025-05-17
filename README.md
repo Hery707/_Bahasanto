@@ -1322,6 +1322,14 @@
           <td>Menanam</td>
           <td>Hembula</td>
         </tr>
+        <tr>
+          <td>Piring</td>
+          <td>Piri</td>
+        </tr>
+        <tr>
+          <td>Sendok</td>
+          <td>Sidu</td>
+        </tr>
 
         
     </tbody>
