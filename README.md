@@ -1314,6 +1314,14 @@
           <td>Memerintah</td>
           <td>Parenta</td>
         </tr>
+        <tr>
+          <td>Mencuri</td>
+          <td>Kanalako</td>
+        </tr>
+        <tr>
+          <td>Menanam</td>
+          <td>Hembula</td>
+        </tr>
 
         
     </tbody>
