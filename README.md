@@ -1330,6 +1330,227 @@
           <td>Sendok</td>
           <td>Sidu</td>
         </tr>
+         <tr>
+          <td>Pura-pura</td>
+          <td>Para-para</td>
+        </tr>
+        <tr>
+          <td>Berpisah</td>
+          <td>Posia</td>
+        </tr>
+        <tr>
+          <td>Kerudung</td>
+          <td>Kudu</td>
+        </tr>
+        <tr>
+          <td>Kemeja</td>
+          <td>Kameja</td>
+        </tr>
+        <tr>
+          <td>Jaket</td>
+          <td>Jeke</td>
+        </tr>
+        <tr>
+          <td>Celana</td>
+          <td>Sala</td>
+        </tr>
+        <tr>
+          <td>Celana Panjang</td>
+          <td>Sala melangka</td>
+        </tr>
+        <tr>
+          <td>Celana Pendek</td>
+          <td>Sala medumpu</td>
+        </tr>
+        <tr>
+          <td>Celana dalam</td>
+          <td>Sala laro</td>
+        </tr>
+        <tr>
+          <td>celana bola</td>
+          <td>Sala golu'a</td>
+        </tr>
+        <tr>
+          <td>Sarung</td>
+          <td>Furai</td>
+        </tr>
+        <tr>
+          <td>Selimut</td>
+          <td>Selimu</td>
+        </tr>
+        <tr>
+          <td>Benang</td>
+          <td>Kambari</td>
+        </tr>
+        <tr>
+          <td>Emas</td>
+          <td>Bulafa</td>
+        </tr>
+        <tr>
+          <td>Peniti</td>
+          <td>Panete</td>
+        </tr>
+        <tr>
+          <td>Sabun</td>
+          <td>Sabo</td>
+        </tr>
+        <tr>
+          <td>Ember</td>
+          <td>Bulusa</td>
+        </tr>
+        <tr>
+          <td>Dapur</td>
+          <td>Dapporo</td>
+        </tr>
+        <tr>
+          <td>Gelas</td>
+          <td>Tonde</td>
+        </tr>
+        <tr>
+          <td>Pisau</td>
+          <td>Soka</td>
+        </tr>
+        <tr>
+          <td>Parang</td>
+          <td>Kabali</td>
+        </tr>
+        <tr>
+          <td>Api</td>
+          <td>Ahu</td>
+        </tr>
+        <tr>
+          <td>Asap</td>
+          <td>Ko'o</td>
+        </tr>
+        <tr>
+          <td>Arang</td>
+          <td>Faha</td>
+        </tr>
+        <tr>
+          <td>Gulak</td>
+          <td>Gola</td>
+        </tr>
+        <tr>
+          <td>Bawang putih</td>
+          <td>Bafa mohute</td>
+        </tr>
+        <tr>
+          <td>Bawang Merah</td>
+          <td>Bafa meha</td>
+        </tr>
+        <tr>
+          <td>Kelapa</td>
+          <td>Kaluku</td>
+        </tr>
+        <tr>
+          <td>Ikan</td>
+          <td>Kenta</td>
+        </tr>
+        <tr>
+          <td>Pisang</td>
+          <td>Loka</td>
+        </tr>
+        <tr>
+          <td>Mangga</td>
+          <td>Taepa</td>
+        </tr>
+        <tr>
+          <td>Kucing</td>
+          <td>Beka</td>
+        </tr>
+        <tr>
+          <td>Ayam</td>
+          <td>Kadola</td>
+        </tr>
+        <tr>
+          <td>Bulu ayam</td>
+          <td>Fulu kadola</td>
+        </tr>
+        <tr>
+          <td>Ayam jantan</td>
+          <td>Kadola moane</td>
+        </tr>
+        <tr>
+          <td>Ayam betina</td>
+          <td>Kadola fofine</td>
+        </tr>
+        <tr>
+          <td>Kambing</td>
+          <td>Fembe</td>
+        </tr>
+        <tr>
+          <td>Ular</td>
+          <td>Sa'a</td>
+        </tr>
+        <tr>
+          <td>Monyet</td>
+          <td>Ndoke</td>
+        </tr>
+        <tr>
+          <td>Tikus</td>
+          <td>Foleke</td>
+        </tr>
+        <tr>
+          <td>Nyamuk</td>
+          <td>Fai</td>
+        </tr>
+        <tr>
+          <td>Akar</td>
+          <td>Aakka</td>
+        </tr>
+        <tr>
+          <td>Daun</td>
+          <td>Ro'o</td>
+        </tr>
+        <tr>
+          <td>Mesjid</td>
+          <td>Masigi</td>
+        </tr>
+        <tr>
+          <td>Rumah</td>
+          <td>Sapo</td>
+        </tr>
+        <tr>
+          <td>Motor</td>
+          <td>Mottoro</td>
+        </tr>
+        <tr>
+          <td>Mobil</td>
+          <td>Oto</td>
+        </tr>
+        <tr>
+          <td>Langit</td>
+          <td>Langi</td>
+        </tr>
+        <tr>
+          <td>Pasir</td>
+          <td>One</td>
+        </tr>
+        <tr>
+          <td>Batu</td>
+          <td>Fatu</td>
+        </tr>
+        <tr>
+          <td>Gunung</td>
+          <td>Gunnu</td>
+        </tr>
+        <tr>
+          <td>Tanah</td>
+          <td>Futa</td>
+        </tr>
+        <tr>
+          <td>Angin</td>
+          <td>Fande</td>
+        </tr>
+        <tr>
+          <td>Hujan</td>
+          <td>Monda</td>
+        </tr>
+        <tr>
+          <td>Air</td>
+          <td>Te'e</td>
+        </tr>
+
 
         
     </tbody>
