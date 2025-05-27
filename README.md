@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -5,8 +6,8 @@
   <title>Bahasanto</title>
   <style>
     body {
-      background-color: #000000;
-      color: Black;
+      background-color: #160000;
+      color: #000000;
       font-family: Arial, sans-serif;
       padding: 20px;
     }
@@ -54,15 +55,15 @@
     }
 
     th {
-      background-color: #dfdfdf;
+      background-color: #968c8c;
     }
 
     tr:nth-child(even) {
-      background-color: #2a2a2a;
+      background-color: #ede5e5;
     }
 
     tr:nth-child(odd) {
-      background-color: #1c1c1c;
+      background-color: #cbc6c6;
     }
   </style>
 </head>
@@ -75,8 +76,6 @@
 
   <!-- Form tambah kata -->
   <div style="margin-top: 20px;">
-    <input type="text" id="kataIndo" placeholder="Bahasa Indonesia">
-    <input type="text" id="kataLokal" placeholder="Bahasa Kaledupa">
     <button onclick="tambahKata()">“Mohon Maaf Jika ada kesalahan, mohon bantu koreksi.”</button>
     <button onclick="tambahKata()">Tambah</button>
   </div>
@@ -91,6 +90,10 @@
     </thead>
     <tbody id="kamusBody">
       <!-- Data awal bisa ditambahkan di sini -->
+       <tr>
+          <td>ANGKA</td>
+          <td></td>
+        </tr>
         <tr>
           <td>1</td>
           <td>Asa</td>
@@ -1106,7 +1109,7 @@
           <td>Menambah</td>
           <td>Tamba'e</td>
         </tr>
-        <tr>
+          <tr>
           <td>Berangkat</td>
           <td>Langke</td>
         </tr>
@@ -1330,7 +1333,7 @@
           <td>Sendok</td>
           <td>Sidu</td>
         </tr>
-         <tr>
+        <tr>
           <td>Pura-pura</td>
           <td>Para-para</td>
         </tr>
@@ -1552,10 +1555,9 @@
         </tr>
 
 
-        
     </tbody>
   </table>
-
+S
   <!-- Script Fungsi -->
   <script>
     function tambahKata() {
@@ -1595,7 +1597,6 @@
 
 </body>
 </html>
-
 
 
 
