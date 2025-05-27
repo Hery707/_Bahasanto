@@ -42,11 +42,27 @@
       </tr>
     </thead>
     <tbody id="dataTable">
-      <tr><td>1</td><td>Asa</td></tr>
-      <tr><td>2</td><td>Dua</td></tr>
-      <tr><td>3</td><td>Tolu</td></tr>
-      <tr><td>4</td><td>gana</td></tr>
-      <tr><td>5</td><td>Lima</td></tr>
+       </tr>
+        <tr><tr>
+          <td>1</td>
+          <td>Asa</td>
+        </tr>
+        <tr><tr>
+          <td>2</td>
+          <td>Dua</td>
+        </tr>
+        <tr><tr>
+          <td>3</td>
+          <td>Tolu</td>
+        </tr>
+        <tr><tr>
+          <td>4</td>
+          <td>Gana</td>
+        </tr>
+        <tr><tr>
+          <td>5</td>
+          <td>Lima</td>
+        </tr>  
       <tr>
           <td>6</td>
           <td>No'o</td>
